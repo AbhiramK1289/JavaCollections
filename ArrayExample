@@ -1,0 +1,26 @@
+package myPackage;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ArrayExample {
+	public static void main(String[] args) {
+		int number;
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the number");
+		number = scanner.nextInt();
+		
+		ArrayList<Integer> arrayNumber = new ArrayList<Integer>();
+		
+		for(int i=1; i<=number; i++) {  //Adding the numbers by for loop...
+			arrayNumber.add(i);
+		}
+		System.out.println("Array Numbers are : "+arrayNumber);
+		
+
+		arrayNumber.remove(3);           //Removing one number at index 3....
+		System.out.println("By Removing one number, the Array Numbers are : "+arrayNumber);
+	}
+	
+}
