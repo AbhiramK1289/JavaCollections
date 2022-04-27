@@ -1,0 +1,25 @@
+package myPackage;
+
+import java.util.ArrayList;
+
+public class ArrayExample2 {
+	public static void main(String[] args) {
+		ArrayList<String> arrayString = new ArrayList<String>();  //Adding the String characters....
+		arrayString.add("my");
+		arrayString.add("name");
+		arrayString.add("is");
+		arrayString.add("Abhiram");
+		arrayString.add("Sai");
+		
+		System.out.println("Array String is : "+ arrayString);
+		
+		arrayString.set(0, "MY");
+		arrayString.set(1, "NAME");
+		arrayString.set(2, "IS");
+		arrayString.set(3, "ABHIRAM");
+		arrayString.set(4, "SAI");
+		System.out.println("Modified Array String is : "+arrayString);  //Modifying the String characters by using set...  
+		
+	}
+
+}
